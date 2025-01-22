@@ -18,8 +18,8 @@ pipeline {
                     sh 'npm --version'
                     
                     // Install dependencies and run build
-                    // sh 'chown -R 992:992 "/ .npm"'
-                    sh 'chown -R 992:992 '/.npm''
+                    sh 'chown -R 992:992 "/ .npm"'
+                    // sh 'chown -R 992:992 '/.npm''
 
                     sh 'npm install'
                     sh 'npm run build'
