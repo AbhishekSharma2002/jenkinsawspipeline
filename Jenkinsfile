@@ -7,7 +7,7 @@ pipeline {
 
     stages {
 
-        tage('clean up code ') {
+        stage('clean up code ') {
             steps {
                 cleanWs()
             }
