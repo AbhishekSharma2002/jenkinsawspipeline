@@ -1,7 +1,7 @@
 pipeline {
     agent any
     options {
-        skipDefaultChckout(true) // skip the default checkout
+        skipDefaultCheckout(true) // skip the default checkout
     }
 
 
