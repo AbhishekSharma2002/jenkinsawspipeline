@@ -3,8 +3,11 @@ pipeline {
     options {
         skipDefaultChckout(true) // skip the default checkout
     }
+
+
     stages {
-        stage('clean up code ') {
+
+        tage('clean up code ') {
             steps {
                 cleanWs()
             }
@@ -15,9 +18,8 @@ pipeline {
                 checkout scm   // checkout the code 
             }
         }
-    }
 
-    stages {
+
         stage('Build') {
             agent {
                 docker {
